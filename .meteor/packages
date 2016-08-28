@@ -26,3 +26,4 @@ accounts-github
 service-configuration
 http
 aslagle:reactive-table
+mizzao:autocomplete

@@ -6,6 +6,9 @@ import { Mongo } from 'meteor/mongo';
 
 if(Meteor.isServer) {
     Meteor.publish('students', function studentsPublication() {
-        return Students.find();
+        if (this.userId)
+            result = Students.find();
+
+        return null;
     });
 }

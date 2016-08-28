@@ -1,0 +1,19 @@
+template(name="permit")
+    btn.btn(data-toggle="collapse" data-target="#permit-form") אישור יציאה
+
+    .container.collapse(id="permit-form")
+        form.new-permit
+            .form-group.row
+                label(for="fname").col-sm-2 שם:
+                .col-sm-2
+                    input.form-control(type="text" name="fname" id="fname")
+            .form-group.row
+                label(for="lname").col-sm-2 שם:
+                .col-sm-2
+                    input.form-control(type="text" name="lname" id="lname")
+            .form-group.row
+                label(for="location").col-sm-2 מקום:
+                .col-sm-2
+                    input.form-control(type="text" name="location" id="location")
+            button.btn.btn-primary(type="submit")
+                | אישור
