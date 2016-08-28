@@ -1,0 +1,72 @@
+head
+    title IASA
+    meta(name="viewport" content="width=device-width, initial-scale=1 user-scalable=no")
+
+body
+    +navBar
+    if currentUser
+            +studentList
+
+template(name="navBar")
+    div(role="navigation").navbar.navbar-default
+        .container-fluid
+            .navbar-header
+                button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-collapse')
+                    span.sr-only Toggle navigation
+                    span.icon-bar
+                    span.icon-bar
+                    span.icon-bar
+                a.navbar-brand(href='/') iasa-management-tool
+            .collapse.navbar-collapse
+                ul.nav.navbar-nav.navbar-right
+                    +loginMenu(align="right")
+
+template(name="loginMenu")
+    if currentUser
+        li.dropdown
+            a(href data-toggle="dropdown").dropdown-toggle
+                = currentUser.login
+                span.caret
+            ul.dropdown-menu
+                li
+                    a(href="" data-action="logout") Logout
+    else
+        if loggingIn
+            li.active
+                a(href) Logging In...
+        else
+            if isLoginServicesConfigured
+                li.active
+                    a(href data-action="login") Login
+
+
+template(name="studentList")
+    .jumbotron
+        div(class="panel panel-primary")
+            .panel-heading תלמידים
+            .panel-body
+                h2
+                    | רשימת התלמידים במערכת.
+
+
+            table(class='table table-striped')
+                thead
+                    td שם משפחה
+                    td שם פרטי
+                    td טלפון
+                    td מיקום
+                    td מצב
+                tbody
+                    each student in students
+                        tr
+                            td
+                                a(href="" rel="tag")= student.name
+                            td
+                                a(href="" rel="tag")
+                            td
+                                a(href="" rel="tag")
+                            td
+                                a(href="" rel="tag")= student.class
+                            td
+                                .col-md-1
+                                    span(class="label label-info pull-right") test
