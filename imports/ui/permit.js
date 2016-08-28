@@ -6,7 +6,6 @@ import './templates/studentpill.jade';
 
 Template.permit.onCreated(function permitOnCreated() {
     Meteor.subscribe('permits');
-    Meteor.subscribe('students');
 });
 
 Template.permit.helpers({
