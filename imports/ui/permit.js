@@ -1,5 +1,5 @@
 import { Template } from 'meteor/templating';
-import { Students };
+import { Students } from '../api/students';
 import { Permits } from '../api/permits';
 import './templates/permit.jade';
 import './templates/studentpill.jade';

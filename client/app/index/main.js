@@ -4,6 +4,7 @@ import { Accounts } from 'meteor/accounts-base';
 import './main.jade';
 import '../../../imports/ui/studentlist.js';
 import '../../../imports/ui/loginmenu.js';
+import '../../../imports/ui/permit.js';
 
 Meteor.subscribe('user');
 
