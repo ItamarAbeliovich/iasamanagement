@@ -1,30 +1,30 @@
 template(name="studentList")
-    .jumbotron
+     .jumbotron.container-fluid
         div(class="panel panel-primary")
             .panel-heading.text-right תלמידים
             .panel-body
                 h2(dir="rtl").text-center
                     | רשימת התלמידים במערכת
 
-
-            table(class='table table-striped')
+            +reactiveTable(collection=students fields=tableFields)
+//            table(class='table table-striped')
                 thead
                     td שם משפחה
                     td שם פרטי
                     td טלפון
                     td מיקום
-                    td מצב
+                    td כיתה
                 tbody
                     each student in students
                         tr
                             td
-                                a(href="" rel="tag")= student.name
+                                a(href="" rel="tag")= student.lname
+                            td
+                                a(href="" rel="tag")= student.fname
+                            td
+                                a(href="" rel="tag")= student.phone
                             td
                                 a(href="" rel="tag")
-                            td
-                                a(href="" rel="tag")
-                            td
-                                a(href="" rel="tag")= student.class
                             td
                                 .col-md-1
-                                    span(class="label label-info pull-right") test
+                                    span(class="label label-info pull-right")= student.class

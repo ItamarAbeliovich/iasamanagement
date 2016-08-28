@@ -6,7 +6,4 @@ import '../../../imports/ui/studentlist.js';
 import '../../../imports/ui/loginmenu.js';
 
 Meteor.subscribe('user');
-Accounts.ui.config({
-  passwordSignupFields: 'USERNAME_ONLY',
-});
 

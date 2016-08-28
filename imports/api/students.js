@@ -3,3 +3,9 @@
  */
 import { Mongo } from 'meteor/mongo';
  export const Students = new Mongo.Collection('students');
+
+if(Meteor.isServer) {
+    Meteor.publish('students', function studentsPublication() {
+        return Students.find();
+    });
+}
