@@ -40,33 +40,3 @@ template(name="loginMenu")
                     a(href data-action="login") Login
 
 
-template(name="studentList")
-    .jumbotron
-        div(class="panel panel-primary")
-            .panel-heading תלמידים
-            .panel-body
-                h2
-                    | רשימת התלמידים במערכת.
-
-
-            table(class='table table-striped')
-                thead
-                    td שם משפחה
-                    td שם פרטי
-                    td טלפון
-                    td מיקום
-                    td מצב
-                tbody
-                    each student in students
-                        tr
-                            td
-                                a(href="" rel="tag")= student.name
-                            td
-                                a(href="" rel="tag")
-                            td
-                                a(href="" rel="tag")
-                            td
-                                a(href="" rel="tag")= student.class
-                            td
-                                .col-md-1
-                                    span(class="label label-info pull-right") test

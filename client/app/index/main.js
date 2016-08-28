@@ -2,33 +2,11 @@ import { Template } from 'meteor/templating';
 import { ReactiveVar } from 'meteor/reactive-var';
 import { Accounts } from 'meteor/accounts-base';
 import './main.jade';
+import '../../../imports/ui/studentlist.js';
 
 Meteor.subscribe('user');
 Accounts.ui.config({
   passwordSignupFields: 'USERNAME_ONLY',
-});
-
-Accounts.config({
-    forbidClientAccountCreation : true
-});
-
-Template.studentList.onCreated(function ListTestOnCreated() {
-  this.students = new ReactiveVar(
-      [
-        {name: "Itamar Abeliovich", class: "יא2"},
-        {name: "Eden Ben-Elya", class: "יא2"}
-      ]
-  );
-});
-
-Template.studentList.helpers({
-  students() {
-    return Template.instance().students.get();
-  },
-});
-
-Template.studentList.events({
-
 });
 
 // Login Menu
