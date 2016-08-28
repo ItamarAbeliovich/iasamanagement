@@ -3,6 +3,11 @@
     <properties>
       <sourceFilesUrls>
         <item url="file://$USER_HOME$/.meteor/packages/session/1.1.6/web.browser/session.js" />
+        <item url="file://$USER_HOME$/.meteor/packages/aslagle_reactive-table/0.8.34/web.browser/lib/reactive_table.css" />
+        <item url="file://$USER_HOME$/.meteor/packages/aslagle_reactive-table/0.8.34/web.browser/lib/reactive_table.js" />
+        <item url="file://$USER_HOME$/.meteor/packages/aslagle_reactive-table/0.8.34/web.browser/lib/reactive_table_i18n.js" />
+        <item url="file://$USER_HOME$/.meteor/packages/aslagle_reactive-table/0.8.34/web.browser/lib/filter.js" />
+        <item url="file://$USER_HOME$/.meteor/packages/aslagle_reactive-table/0.8.34/web.browser/lib/sort.js" />
         <item url="file://$USER_HOME$/.meteor/packages/templating-tools/1.0.4/web.browser/templating-tools.js" />
         <item url="file://$USER_HOME$/.meteor/packages/templating-tools/1.0.4/web.browser/compile-tags-with-spacebars.js" />
         <item url="file://$USER_HOME$/.meteor/packages/templating-tools/1.0.4/web.browser/html-scanner.js" />
@@ -172,11 +177,17 @@
         <item url="file://$USER_HOME$/.meteor/packages/spacebars-compiler/1.0.12/web.browser/compiler.js" />
         <item url="file://$USER_HOME$/.meteor/packages/spacebars-compiler/1.0.12/web.browser/codegen.js" />
         <item url="file://$USER_HOME$/.meteor/packages/spacebars-compiler/1.0.12/web.browser/optimizer.js" />
+        <item url="file://$USER_HOME$/.meteor/packages/anti_i18n/0.4.3/web.browser/packages/anti:i18n.js" />
         <item url="file://$USER_HOME$/.meteor/packages/service-configuration/1.0.10/web.browser/service_configuration_common.js" />
       </sourceFilesUrls>
     </properties>
     <CLASSES>
       <root url="file://$USER_HOME$/.meteor/packages/session/1.1.6/web.browser/session.js" />
+      <root url="file://$USER_HOME$/.meteor/packages/aslagle_reactive-table/0.8.34/web.browser/lib/reactive_table.css" />
+      <root url="file://$USER_HOME$/.meteor/packages/aslagle_reactive-table/0.8.34/web.browser/lib/reactive_table.js" />
+      <root url="file://$USER_HOME$/.meteor/packages/aslagle_reactive-table/0.8.34/web.browser/lib/reactive_table_i18n.js" />
+      <root url="file://$USER_HOME$/.meteor/packages/aslagle_reactive-table/0.8.34/web.browser/lib/filter.js" />
+      <root url="file://$USER_HOME$/.meteor/packages/aslagle_reactive-table/0.8.34/web.browser/lib/sort.js" />
       <root url="file://$USER_HOME$/.meteor/packages/templating-tools/1.0.4/web.browser/templating-tools.js" />
       <root url="file://$USER_HOME$/.meteor/packages/templating-tools/1.0.4/web.browser/compile-tags-with-spacebars.js" />
       <root url="file://$USER_HOME$/.meteor/packages/templating-tools/1.0.4/web.browser/html-scanner.js" />
@@ -346,6 +357,7 @@
       <root url="file://$USER_HOME$/.meteor/packages/spacebars-compiler/1.0.12/web.browser/compiler.js" />
       <root url="file://$USER_HOME$/.meteor/packages/spacebars-compiler/1.0.12/web.browser/codegen.js" />
       <root url="file://$USER_HOME$/.meteor/packages/spacebars-compiler/1.0.12/web.browser/optimizer.js" />
+      <root url="file://$USER_HOME$/.meteor/packages/anti_i18n/0.4.3/web.browser/packages/anti:i18n.js" />
       <root url="file://$USER_HOME$/.meteor/packages/service-configuration/1.0.10/web.browser/service_configuration_common.js" />
     </CLASSES>
     <SOURCES />

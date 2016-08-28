@@ -1,0 +1,19 @@
+template(name="loginMenu")
+    if currentUser
+        li.dropdown
+            a(href data-toggle="dropdown").dropdown-toggle
+                = currentUser.login
+                span.caret
+            ul.dropdown-menu
+                li
+                    a(href="" data-action="logout") Logout
+    else
+        if loggingIn
+            li.active
+                a(href) Logging In...
+        else
+            if isLoginServicesConfigured
+                li.active
+                    a(href data-action="login") Login
+
+

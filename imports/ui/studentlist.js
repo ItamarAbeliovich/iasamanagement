@@ -2,7 +2,7 @@
  * Created by itamar on 8/28/16.
  */
 import { Template } from 'meteor/templating';
-import './studentlist.jade';
+import './templates/studentlist.jade';
 
 Template.studentList.onCreated(function ListTestOnCreated() {
     this.students = new ReactiveVar(
