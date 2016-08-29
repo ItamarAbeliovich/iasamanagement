@@ -3,10 +3,14 @@
  */
 import { Template } from 'meteor/templating';
 import { Students } from '../api/students.js';
+import { Session } from 'meteor/session';
 import './templates/studentlist.jade';
+import './permit';
 
 Template.studentList.onCreated(function studentListOnCreated() {
-    Meteor.subscribe('students')
+    Meteor.subscribe('students');
+    Session.set('permitFormOpen', false);
+
 });
 Template.studentList.helpers({
     students() {
@@ -23,6 +27,10 @@ Template.studentList.helpers({
             { key: 'phone', label: 'טלפון'},
             { key: 'class', label: 'כיתה'}
         ]
+    },
+
+    permitFormOpen() {
+        return Session.get("permitFormOpen");
     }
 });
 

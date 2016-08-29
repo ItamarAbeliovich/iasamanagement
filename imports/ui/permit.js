@@ -1,6 +1,7 @@
 import { Template } from 'meteor/templating';
 import { Students } from '../api/students';
 import { Permits } from '../api/permits';
+import { Session } from 'meteor/session';
 import './templates/permit.jade';
 import './templates/studentpill.jade';
 
@@ -49,5 +50,11 @@ Template.permit.events({
         var student = Students.findOne({fname: fname, lname: lname});
 
         Permits.insert({studentID: student._id, location: location})
-        }
+        },
+
+    'click [data-toggle=collapse]'(e, tmpl) {
+        e.preventDefault();
+
+        Session.set("permitFormOpen", true);
+    }
 });
