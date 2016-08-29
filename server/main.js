@@ -11,11 +11,6 @@ Meteor.startup(() => {
        }
     });
 
-    Accounts.createUser({
-        email: "iabeliovich@gmail.com",
-        password: "myadminacc"
-    });
-
     function getUserInfo(accessToken) {
         let result = HTTP.get("https://api.github.com/user", {
             headers: {
