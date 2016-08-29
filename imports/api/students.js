@@ -11,6 +11,4 @@ if(Meteor.isServer) {
 
         return Students.find();
     });
-
-    Students.insert({fname: "איתמר", lname: "אבליוביץ", phone: "054-6930062", class: "יא2"});
 }

@@ -6,7 +6,7 @@ Meteor.startup(() => {
     ServiceConfiguration.configurations.upsert({service: 'github'}, {
        $set: {
            clientId: 'e360584356e4a8c5b757',
-           secret: 'af30672bb0525058bcfe1c80d71eb8a8e976cf67',
+           secret: 'd812c0a13f020a32c08ad18525b4fb2495bd61e1',
            loginStyle: 'popup'
        }
     });
