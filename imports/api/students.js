@@ -9,6 +9,6 @@ if(Meteor.isServer) {
         if (this.userId)
             return Students.find();
 
-        return Students.find();
+        return null;
     });
 }

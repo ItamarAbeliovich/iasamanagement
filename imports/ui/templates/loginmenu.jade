@@ -2,7 +2,7 @@ template(name="loginMenu")
     if currentUser
         li.dropdown
             a(href data-toggle="dropdown").dropdown-toggle
-                = currentUser.login
+                = email
                 span.caret
             ul.dropdown-menu
                 li
@@ -13,7 +13,22 @@ template(name="loginMenu")
                 a(href) Logging In...
         else
             if isLoginServicesConfigured
-                li.active
-                    a(href data-action="login") Login
-
+                li.dropdown
+                    a(href data-toggle="dropdown").dropdown-toggle Log In
+                        span.caret
+                    ul.dropdown-menu
+                        form(id="login-form" action="action")
+                            li
+                                .form-group
+                                    label(for="login-email") Email Address:
+                                    input(type="email" id="login-email").form-control
+                            li
+                                .form-group
+                                    label(for="login-password") Password:
+                                    input(type="password" id="login-password").form-control
+                            li
+                                input(type="submit" id="login-button" value="Sign in").btn.btn-primary
+                            if loginFailed
+                                li
+                                    p Login failed!
 

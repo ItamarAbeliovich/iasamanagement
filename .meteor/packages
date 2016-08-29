@@ -22,8 +22,9 @@ insecure@1.0.7                # Allow all DB writes from clients (for prototypin
 twbs:bootstrap
 mquandalle:jade
 accounts-ui-unstyled
-accounts-github
 service-configuration
 http
 aslagle:reactive-table
 mizzao:autocomplete
+accounts-password
+accounts-base
