@@ -1,7 +1,10 @@
 template(name="studentList")
      .jumbotron.container-fluid
         .panel.panel-primary
-            +permit
+            if currentUser
+                +permit
+            else
+                .alert-warning אנא התחבר על מנת לגשת למידע
             .panel-heading.text-right(data-toggle="collapse" data-target="#students" href) תלמידים
             .panel-body(id="students")
                 h2(dir="rtl").text-center
