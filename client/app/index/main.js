@@ -8,3 +8,9 @@ import '../../../imports/ui/loginmenu.js';
 
 Meteor.subscribe('user');
 
+Meteor.startup(() => {
+    GoogleMaps.load({
+        key: 'AIzaSyDddDGSpx4zZxpNoaAScTYN22YfMRi2ooE',
+        libraries: 'places'
+    });
+});

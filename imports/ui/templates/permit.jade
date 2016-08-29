@@ -9,8 +9,6 @@ template(name="permit")
                         input.form-control(type="text" name="lname" id="lname")
                     label(for="lname").col-xs-2.col-form-label שם
                 .form-group.row
-                    .col-xs-8
-                        input.form-control(type="text" name="location" id="location")
-                    label(for="location").col-xs-2.col-form-label מקום
+                    +geoInput
                 button.btn.btn-primary(type="submit")
                     | אישור

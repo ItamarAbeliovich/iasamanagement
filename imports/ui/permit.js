@@ -4,6 +4,7 @@ import { Permits } from '../api/permits';
 import { Session } from 'meteor/session';
 import './templates/permit.jade';
 import './templates/studentpill.jade';
+import './geoinput.js';
 
 Template.permit.onCreated(function permitOnCreated() {
     Meteor.subscribe('permits');
