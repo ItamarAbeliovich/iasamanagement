@@ -1,13 +1,13 @@
 template(name="studentList")
      .jumbotron.container-fluid
-        div(class="panel panel-primary")
+        .panel.panel-primary
             +permit
-            .panel-heading.text-right תלמידים
-            .panel-body
+            .panel-heading.text-right(data-toggle="collapse" data-target="#students" href) תלמידים
+            .panel-body(id="students")
                 h2(dir="rtl").text-center
                     | רשימת התלמידים במערכת
 
-            +reactiveTable(collection=students fields=tableFields)
+                +reactiveTable(collection=students fields=tableFields)
 //            table(class='table table-striped')
                 thead
                     td שם משפחה

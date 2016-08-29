@@ -1,19 +1,16 @@
 template(name="permit")
-    btn.btn(data-toggle="collapse" data-target="#permit-form") אישור יציאה
+    .panel.panel-primary
+        .panel-heading.text-right(data-toggle="collapse" data-target="#permit-form") אישור יציאה
 
-    .container.collapse(id="permit-form")
-        form.new-permit
-            .form-group.row
-                label(for="fname").col-sm-2 שם:
-                .col-sm-2
-                    input.form-control(type="text" name="fname" id="fname")
-            .form-group.row
-                label(for="lname").col-sm-2 שם:
-                .col-sm-2
-                    input.form-control(type="text" name="lname" id="lname")
-            .form-group.row
-                label(for="location").col-sm-2 מקום:
-                .col-sm-2
-                    input.form-control(type="text" name="location" id="location")
-            button.btn.btn-primary(type="submit")
-                | אישור
+        .panel-body(id="permit-form").collapse
+            form.new-permit.pull-right
+                .form-group.row
+                    .col-xs-8
+                        input.form-control(type="text" name="lname" id="lname")
+                    label(for="lname").col-xs-2.col-form-label שם
+                .form-group.row
+                    .col-xs-8
+                        input.form-control(type="text" name="location" id="location")
+                    label(for="location").col-xs-2.col-form-label מקום
+                button.btn.btn-primary(type="submit")
+                    | אישור
